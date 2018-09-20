@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bodyColor: #f3f5f9;
+  --topNavColor: #fff;
+  --sideNavColor: #303b44;
+  --sideNavSelected: #1c2b36;
+  --sideNavTextColor: #ccc;
+  --textColor: #494141;
+  /* 1c2b36 */
+}
+
+body {
+  background-color: var(--bodyColor);
+}
+
+/* TOP NAVIGATION ADMINPANEL */
+.nav {
+  height: 75px;
+  width: 100%;
+  background-color: var(--topNavColor);
+  position: fixed;
+  display: block !important;
+  z-index: 10;
+  border-bottom: 1px solid #d0d0d0;
+  padding-left: 250px;
+}
+
+.welcome {
+  padding: 25px;
+  color: var(--textColor);
+}
+
+.side_nav_top {
+  width: 250px;
+  background-color: var(--sideNavSelected);
+  padding: 25px;
+  height: 75px;
+  border-bottom: 1px solid #1b2832;
+}
+
+.side_nav_top_img {
+  width: 100px;
+}
+
+/* SIDE NAVIGATION ADMINPANEL */
+.side_nav {
+  background-color: var(--sideNavColor);
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.side_nav ul, .side_nav ul a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav_item {
+  padding: 20px;
+  color: var(--sideNavTextColor);
+  font-family: 'Open Sans';
+  text-decoration: none;
+  font-weight: 700;
+  padding-left: 60px;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+}
+
+.nav_icon {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  margin-left: -40px;
+  margin-top: -2px;
+  position: absolute;
+  font-size: 25px;
+  color: #9b59b6;
+}
+
+.purple {
+    color: #9b59b6;
+}
+
+.blue {
+  color: #3498db;
+}
+
+.green {
+  color: #2ecc71;
+}
+
+.turquoise {
+  color: #1abc9c;
+}
+
+.nav_item:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--sideNavSelected);
+}
+
+.bottom {
+  bottom: 0;
+  height: 65px;
+  width: 250px;
+  position: fixed;
+  border-top: 1px solid var(--sideNavSelected);
+}
+
+.bottom a {
+  color: var(--sideNavTextColor);
+  text-decoration: none;
+}
+
+.bottom a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.left {
+  float: left;
+  color: var(--sideNavTextColor);
+  padding: 20px;
+}
+
+.right {
+  color: var(--sideNavTextColor);
+  float: right;
+  padding: 20px;
+}
+
+/* INNER BODY */
+.inner_body {
+  padding-top: 75px;
+  padding-left: 250px;
+}
+
+@media only screen and (min-width: 576px) {
+  .admin_container {
+      max-width: 540px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .admin_container {
+      max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .admin_container {
+      max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .admin_container {
+      max-width: 1500px;
+  }
+}
+
+.admin_container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* NOTIFICATIONS DASHBOARD */
+.info_box {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #fff;
+  transition: 0.2s all ease-in-out;
+  padding-bottom: 10px;
+}
+
+.info_box.success {
+  border-left: 5px solid #2ecc71;
+}
+
+.info_box.success:hover {
+  border-left: 5px solid #27ae60;
+}
+
+.info_box.danger {
+  border-left: 5px solid #e74c3c;
+}
+
+.info_box.danger:hover {
+  border-left: 5px solid #c0392b;
+}
+
+.info_box {
+  border-left: 5px solid #3498db;
+}
+
+.info_box:hover {
+  border-left: 5px solid #2980b9;
+}
+
+.info_box .info_close, .info_box .info_close:hover {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.info_box h1 {
+  font-family: montserrat;
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.info_box p {
+  font-family: montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.info_box p span {
+  font-weight: bold;
+}
+
+
+/* TODO */
+.todo_head {
+  background-color: #9b59b6;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 50px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.todo_head p {
+  color: #fff;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.todo_item {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo_item p {
+  margin-bottom: 0 !important;
+}
+
+.todo_item:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
